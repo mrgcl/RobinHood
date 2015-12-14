@@ -67,6 +67,7 @@ public class Node
     public final void setValue(int x)
     {
         value=x;
+        isActive=true;
     }
     /**
      * Gets the value of the node

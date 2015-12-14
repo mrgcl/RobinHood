@@ -143,6 +143,14 @@ public class HashTable
     	}
     }
     
+    public void deleteAll(){
+    	for(Node n: table){
+    		if(n == null) continue;
+    		n.deactivate();
+    	}
+    	inserted = 0;
+    }
+    
     public Node[] getTable(){
     	return table;
     }
